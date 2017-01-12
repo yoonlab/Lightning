@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cgm">
+      <UniqueIdentifier>{1f8b7aba-3a0b-4597-8761-5d8bd909aa9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{519bbde8-527d-4c84-8a99-17023426946c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cgm\cell.cpp">
+      <Filter>cgm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cgm\cgm_map.cpp">
+      <Filter>cgm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cgm\cgm_solver.cpp">
+      <Filter>cgm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cgm\lightning_tree.cpp">
+      <Filter>cgm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cgm\base.h">
+      <Filter>cgm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cgm\cell.h">
+      <Filter>cgm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cgm\cgm_map.h">
+      <Filter>cgm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cgm\cgm_solver.h">
+      <Filter>cgm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cgm\lightning_tree.h">
+      <Filter>cgm</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TKLightningRenderer", "TKLightningRenderer\TKLightningRenderer.vcxproj", "{908914FD-27A8-40A4-87DF-34FB816E6A42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LightningRenderer", "LightningRenderer\LightningRenderer.vcxproj", "{F738E56A-DD39-4FB2-ABBC-C8ED4D446E69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1294E8D1-C062-4D6D-AEFD-47EC1B4B4E07}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heatmap_CGM", "Heatmap_CGM\Heatmap_CGM.vcxproj", "{4B2BB1EB-2802-4273-8AB9-BEA95148D377}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heatmap_Our", "Heatmap_Our\Heatmap_Our.vcxproj", "{C090A9E0-B4A4-40E7-984A-7DD970221618}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LightningRenderer3D", "LightningRenderer3D\LightningRenderer3D.vcxproj", "{F7C859AE-470A-4C94-ADFF-C98BC94739B1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TKFastLaplacian", "TKFastLaplacian\TKFastLaplacian.vcxproj", "{37711484-E3EB-49AB-8BC8-9B8F8DDF5C15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{908914FD-27A8-40A4-87DF-34FB816E6A42}.Debug|Win32.ActiveCfg = Debug|Win32
+		{908914FD-27A8-40A4-87DF-34FB816E6A42}.Debug|Win32.Build.0 = Debug|Win32
+		{908914FD-27A8-40A4-87DF-34FB816E6A42}.Release|Win32.ActiveCfg = Release|Win32
+		{908914FD-27A8-40A4-87DF-34FB816E6A42}.Release|Win32.Build.0 = Release|Win32
+		{F738E56A-DD39-4FB2-ABBC-C8ED4D446E69}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F738E56A-DD39-4FB2-ABBC-C8ED4D446E69}.Debug|Win32.Build.0 = Debug|Win32
+		{F738E56A-DD39-4FB2-ABBC-C8ED4D446E69}.Release|Win32.ActiveCfg = Release|Win32
+		{F738E56A-DD39-4FB2-ABBC-C8ED4D446E69}.Release|Win32.Build.0 = Release|Win32
+		{4B2BB1EB-2802-4273-8AB9-BEA95148D377}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B2BB1EB-2802-4273-8AB9-BEA95148D377}.Debug|Win32.Build.0 = Debug|Win32
+		{4B2BB1EB-2802-4273-8AB9-BEA95148D377}.Release|Win32.ActiveCfg = Release|Win32
+		{4B2BB1EB-2802-4273-8AB9-BEA95148D377}.Release|Win32.Build.0 = Release|Win32
+		{C090A9E0-B4A4-40E7-984A-7DD970221618}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C090A9E0-B4A4-40E7-984A-7DD970221618}.Debug|Win32.Build.0 = Debug|Win32
+		{C090A9E0-B4A4-40E7-984A-7DD970221618}.Release|Win32.ActiveCfg = Release|Win32
+		{C090A9E0-B4A4-40E7-984A-7DD970221618}.Release|Win32.Build.0 = Release|Win32
+		{F7C859AE-470A-4C94-ADFF-C98BC94739B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7C859AE-470A-4C94-ADFF-C98BC94739B1}.Debug|Win32.Build.0 = Debug|Win32
+		{F7C859AE-470A-4C94-ADFF-C98BC94739B1}.Release|Win32.ActiveCfg = Release|Win32
+		{F7C859AE-470A-4C94-ADFF-C98BC94739B1}.Release|Win32.Build.0 = Release|Win32
+		{37711484-E3EB-49AB-8BC8-9B8F8DDF5C15}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37711484-E3EB-49AB-8BC8-9B8F8DDF5C15}.Debug|Win32.Build.0 = Debug|Win32
+		{37711484-E3EB-49AB-8BC8-9B8F8DDF5C15}.Release|Win32.ActiveCfg = Release|Win32
+		{37711484-E3EB-49AB-8BC8-9B8F8DDF5C15}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

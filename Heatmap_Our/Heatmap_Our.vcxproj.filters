@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="generator">
+      <UniqueIdentifier>{1e73ff19-2cb8-4cbe-85f1-c905bb869d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8bfdb040-1426-4efb-a2df-752f3b0ab944}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LightningGenerator\base.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LightningGenerator\lightning_cell.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LightningGenerator\lightning_generator.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LightningGenerator\lightning_tree.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\LightningGenerator\lightning_cell.cpp">
+      <Filter>generator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LightningGenerator\lightning_generator.cpp">
+      <Filter>generator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LightningGenerator\lightning_tree.cpp">
+      <Filter>generator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b3f72fa4-e028-4797-ba7d-6ce0c20e6694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{ff6ab70e-1855-452e-bc4e-ec4242f17869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern">
+      <UniqueIdentifier>{79109a21-18d0-4b3f-a545-8ea0a5ad2f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern\inc">
+      <UniqueIdentifier>{0ffc5490-e3b9-4210-82e8-7a178ca1c364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern\inc\GL">
+      <UniqueIdentifier>{983d8475-ba3a-4da9-b09d-5eb6f131836c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="generator">
+      <UniqueIdentifier>{29bb86de-3ae0-4217-832e-8d10ffc10dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{fff1425c-31d5-4e96-adba-6c5458f8b6ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\extern\inc\GL\freeglut.h">
+      <Filter>extern\inc\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\inc\GL\freeglut_ext.h">
+      <Filter>extern\inc\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\inc\GL\freeglut_std.h">
+      <Filter>extern\inc\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\inc\GL\glew.h">
+      <Filter>extern\inc\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\inc\GL\glut.h">
+      <Filter>extern\inc\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\inc\GL\glxew.h">
+      <Filter>extern\inc\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extern\inc\GL\wglew.h">
+      <Filter>extern\inc\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="generator\base.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="generator\lightning_cell.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="generator\lightning_generator.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="generator\lightning_tree.h">
+      <Filter>generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Base.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CheckError.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Mesh.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Shader.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="generator\lightning_cell.cpp">
+      <Filter>generator</Filter>
+    </ClCompile>
+    <ClCompile Include="generator\lightning_generator.cpp">
+      <Filter>generator</Filter>
+    </ClCompile>
+    <ClCompile Include="generator\lightning_tree.cpp">
+      <Filter>generator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Mesh.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Shader.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\blur_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\blur_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\debug_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\debug_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\grid_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\grid_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\lightning_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\lightning_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\points_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\points_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\quad_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\quad_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\scene_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\scene_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\obstacles_fs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\obstacles_vs.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\cs_cal_ep.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\cs_cal_p.glsl">
+      <Filter>shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
