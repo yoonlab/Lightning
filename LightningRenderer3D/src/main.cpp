@@ -31,7 +31,7 @@ using namespace std ;
 #define RHO						3
 
 #define BASE_THICKNESS			4//3
-#define ITENSITY_ATTENUATION	0.7f
+#define ITENSITY_ATTENUATION	0.8f
 //#define ITENSITY_ATTENUATION	1.0f
 
 #define SCENE_SIZE				720.0f
@@ -40,6 +40,9 @@ using namespace std ;
 #define ELPSILON				0.0001f
 
 //#define USE_WHITE_BACKGROUND
+
+//#define RECURSIVE_HALF_THICKNESS
+#define FIXED_HALF_THICKNESS
 
 
 // --------------------------------------------------------------------------------------------------------------------
@@ -857,7 +860,20 @@ void	updateLightning()
 
 		if ( pNode && pNode->m_pParent )
 		{
+#ifdef	RECURSIVE_HALF_THICKNESS
 			fThickness = pNode->m_fThickness ;
+#else
+	#ifdef	FIXED_HALF_THICKNESS
+			fThickness = BASE_THICKNESS ;
+			if ( false == pNode->m_bMainChannel )
+			{
+				fThickness /= 2.0f ;
+			}
+	#else
+		fThickness = BASE_THICKNESS ;
+	#endif
+#endif
+
 			fStartIntensity = pNode->m_pParent->m_fIntensity ;
 			fEndIntensity = pNode->m_fIntensity ;
 
