@@ -14,7 +14,13 @@ using namespace Lightning ;
 using namespace std ;
 
 // screen shot setting
-// eta=3, rho=2, blur=100, super sampling
+// eta=3, rho=2, blur=100, super sampling, white color, thickness=2.5
+
+// multi target setting
+// eta=4, rho=2, blur=100, super sampling, yellow color, thickness=4
+
+// chain lightning setting
+// eta=2, rho=2, blur=100, super sampling, red color, thickness=3
 
 //#define USE_WHITE_BACKGROUND
 //#define CHECK_FRACTAL_DIMENSION
@@ -25,7 +31,7 @@ using namespace std ;
 #define ETA						3
 #define RHO						2
 
-#define BASE_THICKNESS			2.5
+#define BASE_THICKNESS			2.5//4//3
 #define ITENSITY_ATTENUATION	0.9f
 //#define ITENSITY_ATTENUATION	1.0f
 #define BLUR_COUNT				15
@@ -89,11 +95,11 @@ int					g_timesToShowFPS = 10 ;
 
 std::vector< int >	g_vTimeCheckSteps ;
 
-//glm::vec4			g_vLightningColor = glm::vec4( 0.0f, 0.0f, 1.0f, 1.0f ) ;	// blue
-//glm::vec4			g_vLightningColor = glm::vec4( 1.0f, 0.0f, 0.0f, 1.0f ) ;	// red
-//glm::vec4			g_vLightningColor = glm::vec4( 1.0f, 1.0f, 1.0f, 1.0f ) ;	// white
+glm::vec4			g_vLightningColor = glm::vec4( 0.7f, 0.6f, 1.0f, 1.0f ) ;		// white
+//glm::vec4			g_vLightningColor = glm::vec4( 0.7f, 0.7f, 0.0f, 1.0f ) ;		// yellow
+//glm::vec4			g_vLightningColor = glm::vec4( 0.0f, 0.0f, 0.7f, 1.0f ) ;		// blue
+//glm::vec4			g_vLightningColor = glm::vec4( 0.7f, 0.0f, 0.0f, 1.0f ) ;		// red
 //glm::vec4			g_vLightningColor = glm::vec4( 0.47f, 0.08f, 0.43f, 1.0f ) ;	// purple
-glm::vec4			g_vLightningColor = glm::vec4( 0.7f, 0.6f, 1.0f, 1.0f ) ;	// white
 
 
 // mesh objects
@@ -1840,6 +1846,20 @@ void	init()
 //*/
 
 	// ----------------------------------------------------------------------------
+	// for multiple target example
+/*/
+	vTargets.clear() ;
+	pos.x = 68 ; pos.y = 48 ;	vTargets.push_back( pos ) ;
+	pos.x = 27 ; pos.y = 73 ;	vTargets.push_back( pos ) ;
+	pos.x = 107 ; pos.y = 68 ;	vTargets.push_back( pos ) ;
+	
+	g_lightningGenerator.Load( E_LT_MULTIPLE_TARGET, 128, 16, 67, 109, vTargets ) ;
+
+	// load scene texture
+	LoadTextureFromBMP( "./res/cosmos.bmp", g_texScene ) ;
+//*/
+
+	// ----------------------------------------------------------------------------
 	// for chain lightning
 /*/
 	vTargets.clear() ;
@@ -1858,6 +1878,20 @@ void	init()
 	pos.x = 16 ; pos.y = 20 ;	vTargets.push_back( pos ) ;
 	
 	g_lightningGenerator.Load( E_LT_CHAIN_LIGHTNING, 128, 16, 63, 127, vTargets ) ;
+//*/
+
+	// ----------------------------------------------------------------------------
+	// for chain lightning example
+/*/
+	vTargets.clear() ;
+	pos.x = 50 ; pos.y = 93 ;	vTargets.push_back( pos ) ;
+	pos.x = 77 ; pos.y = 104 ;	vTargets.push_back( pos ) ;
+	pos.x = 108 ; pos.y = 95 ;	vTargets.push_back( pos ) ;
+	
+	g_lightningGenerator.Load( E_LT_CHAIN_LIGHTNING, 128, 16, 12, 100, vTargets ) ;
+
+	// load scene texture
+	LoadTextureFromBMP( "./res/chain.bmp", g_texScene ) ;
 //*/
 
 	// ----------------------------------------------------------------------------
